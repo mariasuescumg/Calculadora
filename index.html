@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--  se agrego un atributo data a la estiqueta de body para detectar el tema-->
+<body data-theme="light">
+    <div id="calculadora">
+        <div class="screen">
+            <div class="pantalla" id="resultado">
+            </div>
+            <div class="remove__clear">
+                <!-- Rounded switch  El elemento HTML <input type="checkbox"> es un elemento de entrada que te permite insertar un vector o array de valores. El atributo value es usado para definr el valor enviado por el checkbox. El atributo checked se usa para indicar que el elemento está seleccionado -->
+                <label class="switch">
+                    <input type="checkbox" id="toggleTheme">
+                    <span class="slider round"></span>
+                </label>
+                <!-- se agrego el button con la clase remove para  borrar de 1 caracter-->
+                <button id="remove">&larr;</button>
+            </div>
+        </div>
+
+    <!-- Se creo un div  con la clase botones para crear la serie de botones de numeros y operaciones-->
+        <div class="botones">
+            <div class="botones__numeros">
+                <button type="button" class="btn btn--number" id="siete">7</button>
+                <button type="button" class="btn btn--number" id="ocho">8</button>
+                <button type="button" class="btn btn--number" id="nueve">9</button>
+                <button type="button" class="btn btn--operaciones" id="division">/</button>
+                <button type="button" class="btn btn--number" id="cuatro">4</button>
+                <button type="button" class="btn btn--number" id="cinco">5</button>
+                <button type="button" class="btn btn--number" id="seis">6</button>
+                <button type="button" class="btn btn--operaciones" id="multiplicacion">x</button>
+                <button type="button" class="btn btn--number" id="uno">1</button>
+                <button type="button" class="btn btn--number" id="dos">2</button>
+                <button type="button" class="btn btn--number" id="tres">3</button>
+                <button type="button" class="btn btn--operaciones" id="resta">-</button>
+                <button type="button" class="btn btn--operaciones"id="igual">=</button>
+                <button type="button" class="btn btn--number" id="reset">C</button>
+                <button type="button" class="btn btn--number" id="cero">0</button>
+                <button type="button" class="btn btn--operaciones" id="suma">+</button>
+            </div>
+        </div>
+    </div>
+    <!-- se ancla el archivo de funcionalidadjs en el archivo HTML -->
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
